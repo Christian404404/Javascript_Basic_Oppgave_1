@@ -1,12 +1,13 @@
 let useRName = "Christian";
 let useRAge = prompt("Please enter your age.");
 useRAge = Number(useRAge);
-let useRIsLoggedIn = true;
+let useRIsLoggedIn = false;
 let useRIsBlocked = false;
 let goTOPage = "";
 
-if (useRName === "Christian" && useRAge >= 18 && useRIsBlocked === false) {
+if (useRName !== "" && useRAge >= 18 && useRIsBlocked === false) {
   console.log("Auth. process success!");
+  useRIsLoggedIn = true;
   goTOPage = "success.html";
   window.location.href = goTOPage;
 } else {

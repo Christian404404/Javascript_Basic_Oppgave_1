@@ -97,15 +97,17 @@ håndterer alle tilfeller korrekt.
 
 let userName = "Christian";
 let userAge = 18;
-let userIsLoggedIn = true;
+let userIsLoggedIn = false;
 let userIsBlocked = false;
-let goToPage = "";
+let goToPage = "/home";
 
 // Skriv koden for oppgave 4 her
-if (userName === "Christian" && userAge <= 18 && userIsBlocked === false) {
-  console.log("Auth. process success!");
+if (userName !== "" && userAge <= 18 && userIsBlocked === false) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log(`Velkommen! ${userName}`);
 } else {
-  console.log("Error auth. process failed.");
+  console.log("En feil har oppstått.");
 }
 /******************************************************************************
 OPPGAVE 5
