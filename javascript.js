@@ -64,7 +64,7 @@ console.log(`Approximate area of circle: ${area}cm\u00B2`);
 console.log(`Your number is: ${counter}`);
 counter += 10;
 console.log(`Your number is now: ${counter}`);
-console.log(`Your number has changed to: ${(counter -= 15)}`);
+console.log(`Your number has changed to: ${(counter -= 25)}`);
 console.log(`Your total is ${total}`);
 
 // Just testing stuff for fun
@@ -127,5 +127,5 @@ at betingelsen din fungerer som den skal.
 const userMale = true;
 
 // Skriv koden for oppgave 5 her
-let userTitle = userMale ? "Mr." : "Mrs.";
+const userTitle = userMale ? "Mr." : "Mrs.";
 console.log(userTitle);
